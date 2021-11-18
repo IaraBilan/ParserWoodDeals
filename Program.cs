@@ -71,12 +71,11 @@ namespace ParserWoodDeals
                                         Console.WriteLine("Deal with number {0} has been added to DB", dealNumber);
                                     }
                                     else
-                                    {
                                         Console.WriteLine("Deal with number {0} is already in DB", dealNumber);
-                                    }
                                 }
                             }
-                        } }
+                        } 
+                    }
                 }
             }
             catch (Exception ex)
