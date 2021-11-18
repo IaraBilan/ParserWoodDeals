@@ -107,13 +107,9 @@ namespace ParserWoodDeals
             WebResponse response = request.GetResponse();
             string requestedData;
             using (Stream stream = response.GetResponseStream())
-            {
                 using (StreamReader reader = new StreamReader(stream))
-                {
-                    //Console.WriteLine(reader.ReadToEnd());
                     requestedData = reader.ReadToEnd();
-                }
-            }
+
             response.Close();
             Console.WriteLine("Data has been requested." );
             return requestedData;
