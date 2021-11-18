@@ -34,7 +34,6 @@ namespace ParserWoodDeals
                 {
                     Console.WriteLine("Start getting new data from portal...");
                     var dealNumberFromDB = dal.GetDealNumbers();
-                    // data for main request
 
                     //do request for 100 deals to prevent stackoverflow
                     for (int i = 0; i < dealsTotalCount / 100; i++)
@@ -46,6 +45,7 @@ namespace ParserWoodDeals
                             ",\"number\":" + i +
                             ",\"filter\":null,\"orders\":null}," +
                             "\"operationName\":\"SearchReportWoodDeal\"}";
+                        // data for main request
                         string data = RequestDataFromPortal(querySearchReportWoodDeal);
                         var json = data.Substring(data.IndexOf("content") + 9, data.Length - data.IndexOf("content") - 46);
 
