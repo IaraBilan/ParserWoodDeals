@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserWoodDeals", "ParserWo
 		{E30511C4-F49D-4865-BD1F-6B99CF52D235} = {E30511C4-F49D-4865-BD1F-6B99CF52D235}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{E30511C4-F49D-4865-BD1F-6B99CF52D235}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{E30511C4-F49D-4865-BD1F-6B99CF52D235}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
